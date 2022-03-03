@@ -43,7 +43,6 @@ class LinkedList:
 			raise Exception(f"{node} already present! Insert Failed!") 
 
 
-
 	def insert(self, node):
 		""" 
 		param: Node
@@ -167,7 +166,12 @@ class LinkedList:
 			return True 
 		return False
 
-
+    # def push(self, node):
+    #     if not self.is_full():
+    #         node.nextval = self.head 
+    #         self.head = node
+    #     else:
+    #         raise Exception("Linked List already full!")
 
 	def __str__(self):
 		
