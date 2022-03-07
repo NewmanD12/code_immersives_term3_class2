@@ -166,12 +166,12 @@ class LinkedList:
 			return True 
 		return False
 
-    # def push(self, node):
-    #     if not self.is_full():
-    #         node.nextval = self.head 
-    #         self.head = node
-    #     else:
-    #         raise Exception("Linked List already full!")
+	def push(self, node):
+		if not self.is_full():
+			node.nextval = self.head 
+			self.head = node
+		else:
+			raise Exception("Linked List already full!")
 
 	def __str__(self):
 		
