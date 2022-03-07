@@ -39,11 +39,22 @@ def is_monotonic(lst):
 		return True
 	return False
 
+def create_g(num):
+    half_point = round(num / 2) - 1
+    for i in range(num):
+        if i == half_point:
+            print('*' + ' ' * half_point + '***')
+        if i == 0 or i == num - 1:
+            print(' ' + '*' * (half_point + 2) + ' ')
+        elif i < half_point:
+            print('*')
+        elif i > half_point:
+            print('*' + ' ' * (half_point+2) + '*')
+
 
 
 if __name__ == '__main__':
-    # print(find_average_word_len(sentence1))
-    # print(find_average_word_len(sentence2))
-    print(is_monotonic(A))
-    print(is_monotonic(B))
-    print(is_monotonic(C))
+    create_g(7)
+    # create_g(9)
+    # create_g(11)
+
